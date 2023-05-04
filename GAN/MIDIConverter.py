@@ -2,6 +2,7 @@
 from music21 import instrument, note, chord, stream, converter
 import numpy as np
 
+
 class MIDIConverter:
 
     def __init__(self):
