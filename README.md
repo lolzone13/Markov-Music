@@ -10,17 +10,24 @@ This is a project to compare multiple different music generation techniques. We 
 
 A Markov chain is a mathematical system that experiences transitions from one state to another according to certain probabilistic rules. MIDI sequences are represented as sequences of states, and the model is trained on a song to generate a transition matrix. Using this transition matrix, we perform a random walk to generate a new musical piece.
 
-![Generated Music](https://github.com/lolzone13/Image-Processing/blob/main/assets/grayscale_image.png)
+![Markov Chain](https://github.com/lolzone13/Markov-Music/blob/main/assets/markovChain.png)
 
 
 ## LSTMs
 
 LSTM stands for long short-term memory networks, used in the field of Deep Learning. It is a variety of recurrent neural networks (RNNs) that are capable of learning long-term dependencies, especially in sequence prediction problems. The network is trained on a plethora of classical piano music and then used to predict a new sequence.
 
-![Grayscale Image](https://github.com/lolzone13/Image-Processing/blob/main/assets/grayscale_image.png)
+![LSTM](https://github.com/lolzone13/Markov-Music/blob/main/assets/lstm.png)
 ## GANs
 
 GANs are a class of Generative Models, i.e, they create new models that resemble the training data. It is composed of two neural networks - a generator and a discriminator which compete against each other. The generator creates fake samples and the discriminator decides whether these samples are fake or real.
+
+![GAN](https://github.com/lolzone13/Markov-Music/blob/main/assets/GANs.jpg)
+## Music Visualization
+
+We use Pygame to visualize the music played. The bars are generated in the frequency domain (using the fourier transform) and the height of the bars are controlled by the amplitude of the music piece. We also have different colors for different frequency ranges - mids, lows and highs.
+
+![Viz](https://github.com/lolzone13/Markov-Music/blob/main/assets/musicviz.gif)
 ## Tech Stack
 
 The project is written in python and uses the following packages
@@ -37,8 +44,10 @@ The project is written in python and uses the following packages
 
 ## Installation
 
+To install the dependencies, activate your virtual environment and then run 
+
 ```bash
-  venv\Scripts\activate.bat
+  pip install -r requirements.txt
 ```
 
 ## Authors
